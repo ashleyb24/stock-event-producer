@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+producer:
+  stock:
+    symbols: AAPL,TSLA
+    topic: global-quote
+  currency:
+    codes: BTC,ETH
+    topic: currency-exchange
+
+alphavantage:
+  api:
+    key: ${API_KEY}
+
+kafka:
+  bootstrapAddress: localhost:9092
